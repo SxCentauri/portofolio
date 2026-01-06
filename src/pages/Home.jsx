@@ -111,13 +111,14 @@ export default function Home() {
                 className="group relative bg-zinc-900/40 border border-zinc-800/80 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col"
               >
                 <div className="p-6 sm:p-8 flex-1 flex flex-col">
-                  <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-2xl font-bold text-zinc-100 group-hover:text-blue-400 transition line-clamp-1">
-                      {project.title}
-                    </h3>
-                    <span className="text-[10px] uppercase tracking-wider font-mono text-blue-400 bg-blue-950/50 px-3 py-1 rounded-full border border-blue-800/50 ml-2 shrink-0">
+                  
+                  <div className="flex flex-col gap-3 mb-4">
+                    <span className="text-[10px] uppercase tracking-wider font-mono text-blue-400 bg-blue-950/50 px-3 py-1 rounded-full border border-blue-800/50 w-fit">
                       {project.tech_stack || 'Tech'}
                     </span>
+                    <h3 className="text-2xl font-bold text-zinc-100 group-hover:text-blue-400 transition leading-tight">
+                      {project.title}
+                    </h3>
                   </div>
                   
                   <p className="text-zinc-400 leading-relaxed mb-6 line-clamp-3 flex-1">

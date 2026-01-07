@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../supabaseClient'
-import { Github, ExternalLink, Lock, Terminal, Loader2, Linkedin, Mail, ArrowRight } from 'lucide-react'
+import { Github, ExternalLink, Lock, Terminal, Loader2, Mail, ArrowRight } from 'lucide-react'
 
 export default function Home() {
   const [projects, setProjects] = useState([])
@@ -61,7 +61,7 @@ export default function Home() {
             </h1>
             
             <p className="text-lg sm:text-xl text-zinc-400 max-w-2xl leading-relaxed mb-8 mx-auto md:mx-0">
-              Halo! Saya seorang <b>Fullstack Developer</b> (React & Laravel). Saya mengubah ide kompleks menjadi aplikasi web yang cepat, elegan, dan fungsional.
+              Halo! Saya <b>Akhmat Qavidhufahmi</b>, seorang <b>Fullstack Developer</b> (React & Laravel). Saya mengubah ide kompleks menjadi aplikasi web yang cepat, elegan, dan fungsional.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
@@ -121,7 +121,8 @@ export default function Home() {
                     </h3>
                   </div>
                   
-                  <p className="text-zinc-400 leading-relaxed mb-6 line-clamp-3 flex-1">
+                  {/* line-clamp dihapus agar teks tidak terpotong */}
+                  <p className="text-zinc-400 leading-relaxed mb-6 flex-1">
                     {project.description}
                   </p>
 
@@ -152,7 +153,7 @@ export default function Home() {
       <footer className="border-t border-zinc-800/50 py-10 text-center">
         <div className="text-zinc-500 text-sm flex flex-col items-center gap-2">
           <Terminal size={20} className="text-zinc-700 mb-2" />
-          <p>&copy; {new Date().getFullYear()} Portofolio Saya.</p>
+          <p>&copy; {new Date().getFullYear()} Akhmat Qavidhufahmi.</p>
           <p>Dibuat dengan React, Tailwind, dan Supabase.</p>
         </div>
       </footer>
